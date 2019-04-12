@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.project.hieu.ghichu.AddNoteActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarAddNote"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="#D32F2F"
+        android:theme="@style/CustomBackgroundPopup"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBarAddNote">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edtitle"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Title"
+                android:textColor="#000"
+                android:inputType="text"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                />
+            <ScrollView
+                android:id="@+id/scrView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvtime"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <EditText
+                        android:id="@+id/edcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#616161"
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:minLines="6"
+                        android:maxLines="10"
+                        android:layout_marginLeft="10dp"
+
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/tvhengio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HẸN GIỜ"
+                android:layout_toRightOf="@+id/edtitle"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btngio"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/edtitle"
+                android:layout_marginTop="10dp"
+                android:text="time"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/tvhengio"
+                />
+            <Button
+                android:id="@+id/btnngay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/btngio"
+                android:layout_marginTop="10dp"
+                android:text="Date"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_below="@+id/tvhengio"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tvtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/edtitle"
+                android:textColor="#FFF"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:layout_below="@+id/btngio"
+                android:layout_marginLeft="25dp"
+
+                />
+            <TextView
+                android:id="@+id/tvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btngio"
+                android:textColor="#FFF"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:layout_below="@+id/btnngay"
+                android:layout_marginLeft="-10dp"
+
+                />
+            <ImageView
+                android:id="@+id/imanhdaidien"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:background="#FFF"
+                android:layout_below="@+id/scrView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

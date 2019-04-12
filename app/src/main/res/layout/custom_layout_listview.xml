@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/imv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#FFF"/>
+    <TextView
+        android:id="@+id/tvngayphathanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imv"
+        android:text="Ngày phát hành"
+        android:layout_marginLeft="10dp"
+        android:textColor="#64DD17"
+
+        />
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvngayphathanh"
+        android:layout_toRightOf="@id/imv"
+        android:text="Title"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/tvcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imv"
+        android:layout_below="@id/tvtitle"
+        android:text="Content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imalarm"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/tvngayphathanh"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/alarm"
+
+        />
+    <TextView
+        android:id="@+id/tvhengio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imalarm"
+        android:text="hẹn giờ"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>

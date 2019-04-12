@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.hieu.ghichu">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.project.hieu.ghichu.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/CustomAppBar">
+        <activity android:name="com.project.hieu.ghichu.ScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.hieu.ghichu.AddNoteActivity"
+            android:parentActivityName="com.project.hieu.ghichu.MainActivity" />
+        <activity android:name="com.project.hieu.ghichu.MainActivity" />
+
+        <receiver
+            android:name="com.project.hieu.ghichu.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.project.luulinhson.ghichu.THOI_GIAN_HIEN_TAI" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.project.hieu.ghichu.Service.AlarmService" />
+
+        <activity android:name="com.project.hieu.ghichu.LoginActivity" />
+        <activity android:name="com.project.hieu.ghichu.RegisterActivity"></activity>
+    </application>
+
+</manifest>
